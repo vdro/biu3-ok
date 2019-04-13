@@ -1,0 +1,16 @@
+<div id="post-wrapper">
+  <button type="button" class="btn btn-primary" (click)="toggleEditMode()">Edit title</button> 
+  <h1 *ngIf="!isInEditMode">Post title: {{post.title}}</h1>
+  <input *ngIf="isInEditMode" type="text" [(ngModel)]="post.title"/>
+  <h2>Added on: {{post.date | date:'shortDate'}}</h2> 
+  <div class="text-center">
+  </div>
+  <span id="description">Description: {{post.content}}</span> 
+</div>
+
+<div id="comment-wrapper">
+    <h2>Reader's comments:</h2> 
+    <div class="comment-list">     
+      <post-comment [comment]="comment"></post-comment>
+    </div>
+</div>

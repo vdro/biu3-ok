@@ -1,0 +1,27 @@
+#comment-wrapper {
+    background-color: gray;
+    text-align: center;
+}
+#post-wrapper {
+    background-color: gray;
+    text-align: center;
+    padding-bottom: 5%;
+}
+div.comment-list {
+    padding-bottom: 2em;
+}
+#picture{
+    padding:2em 3% 0 3%;
+}
+#description{
+    color: #f58187;
+    background-color:blue;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:800;
+    display:block;
+    padding: 0 5% 5% 5%;
+    margin: 0 3% 0 3%;
+}
+#comment-wrapper h2{
+  padding: 1em 0 1em 0;
+}
